@@ -40,14 +40,14 @@ class GUI:
 								# Fatal Python Error: PyEval_RestoreThread: NULL tstate
 
 
-gui = GUI()
+#gui = GUI()
 #Example to plot a signal and update GUI to show the plot
-t_start = 0
-t_end = 3
-while(True):
-	t = np.arange(t_start, t_end, .01)
-	base_sine = 20 * np.sin(2 * np.pi *10* t)
-	random_noise = np.random.randn()* np.sin(2 * np.pi *np.random.randn()* t)
-	gui.plot_signal(t, np.add(base_sine, random_noise), 'time', 'sine' )
-	t_start = t_end + 0.1
-	t_end = t_start + 3
+#t_start = 0
+#t_end = 3
+#while(True):
+#	t = np.arange(t_start, t_end, .01)
+#	base_sine = 20 * np.sin(2 * np.pi *10* t)
+#	random_noise = np.random.randn()* np.sin(2 * np.pi *np.random.randn()* t)
+#	gui.plot_signal(t, np.add(base_sine, random_noise), 'time', 'sine' )
+#	t_start = t_end + 0.1
+#	t_end = t_start + 3
