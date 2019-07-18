@@ -16,5 +16,5 @@ def filter_ecg(	ecg, fs,
 		hr = processing.compute_hr(sig_len=len(ecg), qrs_inds=qrs_inds, fs=fs)
 		return (processed_ecg, hr) 
 	else:
-		return (processed_ecg, None)
+		return (processed_ecg)
 	

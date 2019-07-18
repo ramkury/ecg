@@ -22,11 +22,12 @@ class GUI:
 		quit_btn.pack(side = BOTTOM)
 		self.refresh()
 
-	def plot_signal(self, x, y, x_label='', y_label=''):
+	def plot_signal(self, x, y, x_label='', y_label='', title=''):
 		self.axis.clear()
 		self.axis.plot(x, y)
 		self.axis.set_xlabel(x_label)
 		self.axis.set_ylabel(y_label)
+		self.axis.set_title(title)
 		self.canvas.draw()
 		self.refresh()
 
